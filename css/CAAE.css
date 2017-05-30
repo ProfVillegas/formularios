@@ -1,0 +1,20 @@
+/* CSS Document */
+body{background:#D8E7EB; margin: 0; padding: 0;}
+.container{
+	width: 300px;
+	height: 450px;
+	background:#A4C6DE;
+	box-shadow: 30px 10px 50px;
+	border-radius: 10px;
+}
+.pantalla{
+	width: 270px;
+	height: 50px;
+	background:#21B8D7 ;
+	border-radius: 5px;
+}
+.tecla{margin: 0.5px 0.5px 0.5px 0.5px; display: block; float: left; width: 99px; height: 70px; text-align: center;background:#3A95E1;}
+.tecla a{display: block; line-height: 50px; color:yellow; text-decoration: none;}
+.tecla a:hover{background: #FFE200; color: blue;}
+.tecka a:active{background: #869FD3;}
+.clear{clear: both;}
