@@ -4,74 +4,58 @@
 <meta charset="utf-8">
 <title>CALCULADORA</title>
 </head>
+<style>
+.container 
+{
+	width: 300px;
+	height:450px;
+	background:hsla(359,79%,45%,1.00);
+	border:2px solid black;
+}
+.Resultado
+{
 
-<body bgcolor="wHITE" >
- 
- 
+margin:50 px;
+width:284px;
+height:60px;
+padding:25px;
 
-<table border="4" width="400" cellspacing="0" cellpadding="0" bgcolor="#000000"
-style="border-color:black" onClick="previouskey=event.srcElement.innerText">
-  <tr>
-    <td width="100%" bgcolor="#FFFFFF" id="result"
-    style="font:bold 20px Verdana;color:black;text-align='right'">0</td>
-  </tr>
-  <tr>
-    <td width="100%" valign="middle" align="center"><table border="0" width="100%"
-    cellspacing="0" cellpadding="0" style="font:bold 20px Verdana;color:white">
-      <tr>
-        <td width="80%" align="center"><table border="1" width="100%" cellspacing="0"
-        cellpadding="0" style="cursor:hand;font:bold 20px Verdana;color:white"
-        onMouseover="if (event.srcElement.tagName=='TD')event.srcElement.style.color='yellow'"
-        onMouseout="event.srcElement.style.color='white'" onselectStart="return false"
-        onClick="calculate()" height="82">
-          <tr>
-            <td width="25%" align="center" height="17">7</td>
-            <td width="25%" align="center" height="17">8</td>
-            <td width="25%" align="center" height="17">9</td>
-            <td width="25%" align="center" height="17">/</td>
-          </tr>
-          <tr>
-            <td width="25%" align="center" height="19">4</td>
-            <td width="25%" align="center" height="19">5</td>
-            <td width="25%" align="center" height="19">6</td>
-            <td width="25%" align="center" height="19">*</td>
-          </tr>
-          <tr>
-            <td width="25%" align="center" height="19">1</td>
-            <td width="25%" align="center" height="19">2</td>
-            <td width="25%" align="center" height="19">3</td>
-            <td width="25%" align="center" height="19">-</td>
-          </tr>
-          <tr>
-            <td width="25%" align="center" height="19">0</td>
-            <td width="25%" align="center" height="19"
-            onClick="pn();previouskey=1;event.cancelBubble=true">+/-</td>
-            <td width="25%" align="center" height="19">.</td>
-            <td width="25%" align="center" height="19">+</td>
-          </tr>
-        </table>
-        </td>
-        <td width="20%"><div align="left"><table border="1" width="100%" cellspacing="0"
-        cellpadding="0">
-          <tr>
-            <td width="100%" style="cursor:hand;font:bold 20px Verdana;color:white;text-align:center"
-            onClick="result.innerText=0;results=''">C</td>
-          </tr>
-        </table>
-        </div><div align="left"><table border="1" width="100%" cellspacing="0" cellpadding="0"
-        height="81">
-          <tr>
-            <td width="100%" style="cursor:hand;font:bold 32px Verdana;color:white;text-align:center"
-            onMouseover="event.srcElement.style.color='yellow'"
-            onMouseout="event.srcElement.style.color='white'" onClick="calculateresult()">=</td>
-          </tr>
-        </table>
-        </div></td>
-      </tr>
-    </table>
-    </td>
-  </tr>
-</table>
+
+}
+.Butones
+{
+width:60px;
+height:50px;
+padding:25px;
+margin:5px;	
+}
+
+</style>
+
+<body><center>
+<div class="container">
+       <h1 align="center">Calculadora</h1>
+ <button type="button" class="Resultado"></button><br><br>
+ 
+<button type="button" class="Butones">7</button>
+<button type="button" class="Butones">8</button>
+<button type="button" class="Butones">9</button>
+<button type="button" class="Butones">+</button>
+<button type="button" class="Butones">5</button>
+<button type="button" class="Butones">6</button>
+<button type="button" class="Butones">4</button>
+<button type="button" class="Butones">-</button>
+<button type="button" class="Butones">1</button>
+<button type="button" class="Butones">2</button>
+<button type="button" class="Butones">3</button>
+<button type="button" class="Butones">x</button>
+<button type="button" class="Butones">0</button>
+<button type="button" class="Butones">.</button>
+<button type="button" class="Butones">=</button>
+<button type="button" class="Butones">/</button>
+
+</div>
+</center>
 </body>
 </html>
 

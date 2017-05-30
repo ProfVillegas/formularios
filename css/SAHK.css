@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container{
+	width: 300%;
+	margin: 0px;
+	background:#red;
+	color: #07050A;
+	height:450;
+	
+}
+.buttotext
+{
+	background:#fff;
+	width:277px;
+	height;40px;
+	padding:20;
+	
+}
+.button
+{
+	background:#;
+	width:20px;
+	height;30px;
+	padding:10;
+	margin:10px;
+}
+
+
+		
