@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+#calculadora{
+	margin:	20px auto;
+	width:280px;
+	height:430px;
+	background:#417AE4;
+	padding:10px;
+	border-radius:10px;
+}
