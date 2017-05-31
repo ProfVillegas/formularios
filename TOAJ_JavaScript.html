@@ -64,7 +64,30 @@ document.writeln("<b>"+resultado+"</b><br>");
 resultado=num-5;
 document.writeln("<b>"+resultado+"</b><br>");
 
+nombre=prompt("quien eres?","proporcione nombre");
+texto=(nombre=="luis")?"hola, jefe":"hola, extraño";
 
+document.writeln("<p>"+texto+"</p>");
+
+//leer dos numeros 
+n1=prompt("proporcione primer valor",0);
+n2=prompt("proporcione primer valor",0);
+
+//estructura de control
+document.writeln((n1>n2)?"es mayor n1 a n2<br>":"no es mayor<br>");
+document.writeln((n1<n2)?"es mayor n1 a n2<br>":"no es menor<br>");
+document.writeln((n1>=n2)?"es mayor o igual n1 a n2<br>":"no es mayor<br>");
+document.writeln((n1<=n2)?"es menor o igual a n2<br>":"no es igual<br>");
+document.writeln((n1!=n2)?"es diferente a n2<br>":"no es diferente<br>");
+
+//estructura del if 
+if(n1==n2){
+	document.writeln("<h6>Ni es igual N2</h6>");
+	}else{
+		document.writeln("<h6>Ni es diferente de N2</h6>");
+		}
+		
+		
 //Dejar de ocultar -->
 </script>
 
