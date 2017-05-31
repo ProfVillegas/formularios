@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JAVA Script</title>
+</head>
+
+<body>
+<html><head><title>Un ejemplo</title></head>
+<style>
+b{
+	color::darkblue;
+	display:block;
+	width:200px;
+}
+b:hover{
+	color:white;
+	background:black;
+	cursor:pointer;
+}
+</style>
+<body>
+Aquí hay un script:
+<script language="JavaScript">
+<!-- Ocultar
+// Salida "Funciona!"
+document.writeln( "Funciona!<br>" );
+//Dejar de ocultar -->
+prompt( "¿Cuál es tu color favorito?", "VERDE" );
+document.write( prompt( "Tu edad", "19" ) );
+var ejemplo = "Hola";
+document.write(ejemplo);
+num=10;
+num+=5;
+num+=5;
+num+=5;
+document.writeln("<h3>"+num+"</h3>");
+num-=10;
+num-=10;
+num-=10;
+document.writeln("<h3>"+num+"</h3>");
+//operaciones mat
+var resultado=0;
+resultado=num*5;
+document.writeln("<b>"+resultado+"</b><br>");
+resultado=num/5;
+document.writeln("<b>"+resultado+"</b><br>");
+resultado=num+10;
+document.writeln("<b>"+resultado+"</b><br>");
+resultado=num-5;
+document.writeln("<b>"+resultado+"</b><br>");
+
+nombre=prompt("¿Quien eres?","Proporcione nombre");
+texto = (nombre == "Luis" ) ? "Hola, Jefe" : "Hola, extraño";
+document.writeln("<p>"+texto+"</p>");
+
+//Leer 2 numeros
+n1=prompt("Proporcione primer valor",0);
+n2=prompt("Proporcione segundo valor",0);
+document.writeln((n1>n2)?"Es mayor a n2<br>":"No es mayor<br>");
+document.writeln((n1<n2)?"Es menor a n2<br>":"No es menor<br>");
+document.writeln((n1>=n2)?"Es mayor o igual n1 a n2<br>":"No es mayor<br>");
+document.writeln((n1<=n2)?"Es menor o igual n1 a n2<br>":"No es menor<br>");
+document.writeln((n1!=n2)?"Es diferente n1 a n2<br>":"No es diferente n1 a n2<br>");
+
+if(n1==n2){
+	document.writeln("<h6> N1 es igual N2</6>");
+}
+		else
+		{
+			document.writeln("<h6>N1 es diferente de N2</h6>");
+		}
+	
+
+</script>
+</body></html>
+
+</body>
+</html>
