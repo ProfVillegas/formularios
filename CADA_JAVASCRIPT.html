@@ -56,9 +56,26 @@ document.write(prompt("Tu edad","19"));
 	 resultado=num-5;
 	  document.writeln("<b>"+resultado+"</b></br>");
 	  
+	  nombre=prompt("¿Quién eres?","Proporcione nombre");
+	  texto=(nombre=="Luis")?"Hola, jefe":"Hola, extraño";
 	  
+	  document.writeln("<p>"+texto+"</p>");
+	  
+	  n1=prompt("proporcione primer valor",0);
+	  n2=prompt("proporcione primer valor",0);
+	  
+	  document.writeln((n1>n2)?"Es mayor n1 a n2<br>": "no es mayor<br>");
+	  document.writeln((n1>n2)?"Es mayor n1 a n2<br>": "no es mayor<br>");
+	  document.writeln((n1>=n2)?"Es mayor o igual n1 a n2<br>": "no es mayor<br>");
+	  document.writeln((n1>=n2)?"Es menor o igual a n2<br>": "no es o igual<br>");
+	  document.writeln((n1!=n2)?"Diferente a n2<br>":"no es diferente<br>");
 	 
-//Dejar de ocultar -->
+	  if(n1==n2){
+		  document.writeln("<h6>N1 es igual a N2</h6>");
+	  } else{
+		  document.writeln("<h6>N1 es diferente de N2</h6>");
+	  }
+
 </script>
 </body>
 </html>
