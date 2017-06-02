@@ -9,7 +9,7 @@
 	display: block; 
 	width: 200px;
 	}
-	b :hover{
+	b: hover{
 		color: white; 
 		background: #000;
 		cursor: pointer; 
@@ -59,6 +59,27 @@ document.writeln (ejemplo);
 	
 	resultado = num-5;
 	document.writeln ("<h2>"+resultado+"</h2>"); 
+	
+	nombre= prompt("¿Quien eres?", "Proporcione nombre");
+	texto=(nombre=="Luis")?"Hola, jefe":"Hola, Extraño";
+	document.writeln("<p>"+texto+"</p>");
+	
+	//Leer dos numeros 
+	
+	n1=prompt("Proporcione primer valor", 0);
+	n2=prompt("Proporcione segundo valor", 0);
+	document.writeln((n1>n2)? "Es mayor n1 a n2": "No es mayor");
+	document.writeln((n1>n2)? "Es menor n1 a n2": "No es menor");
+	document.writeln((n1>n2)? "Es mayor o igual a n1 a n2": "No es mayor");
+	document.writeln((n1>n2)? "Es menor o igual a n2": "No es diferente");
+	
+	if(n1==n2){
+		document.writeln("<h6> N1 es igual N2 </h6>");
+	} else{
+		document.writeln("<h6> N1 es diferente de N2</h6>");
+	}
+	
+	
 	
 </script>
 
