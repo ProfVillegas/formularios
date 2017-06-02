@@ -51,6 +51,29 @@ resultado=num+10;
 document.writeln("<b>"+resultado+"</b><br>");
 resultado=num-5;
 document.writeln("<b>"+resultado+"</b><br>");
+
+nombre=prompt("¿quien eres ?","proporcione nombre");
+texto=(nombre=="gerardo")?"hola ,patron":"hola,extraño";
+
+document.writeln("<p>"+texto+"</p>");
+
+//Leer dos  números
+
+n1=prompt("proporcione primer valor",0);
+n2=prompt("proporcione primer valor",0)
+
+document.writeln((n1>n2)?"es mayor a n1 a n2<br>":"no es mayor");
+document.writeln((n1<n2)?"es menor a n1 a n2<br>":"no es menor");
+document.writeln((n1>=n2)?"es mayor o igual n1 a n2<br>":"no es mayor o igual");
+document.writeln((n1<=n2)?"es menor o igual  a n2<br>":"no es o igual");
+document.writeln((n1!=n2)?"es diferente  a n2<br>":"no es diferente");
+
+if(n1==n2){
+	document.writeln("<h6>N1 es igual a N2</h6>");
+}else{
+	document.writeln("<h6>N1 es diferente de N2</h6>");
+}
+	
 	 //Dejar de ocultar -->
 </script>
 </body>
