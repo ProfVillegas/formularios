@@ -7,20 +7,23 @@
 
 <body>
 <script type="text/javascript">
-opcion=prompt("proporcione valor del 1 al 3", 0);
+	opcion=prompt("proporcione valor del 1 al 3", 0);
 
+	//Casos
 		switch(opcion){
 			case "1":{
 				document.writeln("Proporciono 1<br>");
 				break;
 			}
 			default:{
-				document.writeln("no proporciono opcion valida<br>");
+				document.writeln("no proporciono una opcion valida<br>");
 			}
 		}
-		for (x=0;x<opcion;x++){
+		// for
+		for (x=0;x<opcion;x++)
+		{
 			document.writeln("<p>"+(x)+"</p>")
-		
+		}
 </script>
 
 </body>
