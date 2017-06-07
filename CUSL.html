@@ -4,40 +4,85 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>CALCULADORA</title>
+<style type="text/css">
+#boton{
+	height:50px;
+	width:60px;
+	font-size:14px;
+  
+}
+#boton2{
+	height:30px;
+	width:30px;
+	
+	}
+#pantalla{
+	heigth:40px;
+	width:270px;
+	font-size:18px;
+
+}
+table{
+	border-collapse: collapse;
+	background-color: #00C;
+	
+}
+table td{
+	border:2px;
+	
+}
+body{background: #0c0;}
+</style>
 </head>
 
 <body>
 <form name="Calculadora">
-<table border="2" width="300">
-<tr>
-<td colspan="4">0</td>
-</tr>
-<tr>
-<td><input type="button" value="9" onClick="pantalla.value+='9"></td>
-<td>8</td>
-<td>7</td>
-<td>/</td>
-</tr>
-<tr>
-<td>6</td>
-<td>5</td>
-<td>4</td>
-<td>*</td>
-</tr>
+<table border="1"  width="300" height="400" align="center" >
+
 <tr>
 
-<td>3</td>
-<td>2</td>
-<td>1</td>
-<td>-</td>
+<td colspan="4" align="center"  ><input type="text"  name="pantalla" id="pantalla" ></td>
 </tr>
 <tr>
-<td>0</td>
-<td>.</td>
-<td>=</td>
-<td>+</td>
+<td align="center"><input type="button" value="C" onclick="pantalla.value=''" id="boton2" ></td>
 </tr>
+
+<tr>
+
+
+<td  align="center"><input type="button" value="7" onclick="pantalla.value+='7'" id="boton"></td>
+<td  align="center"><input type="button" value="8" onclick="pantalla.value+='8'" id="boton"></td>
+<td  align="center" ><input type="button" value="9" onclick="pantalla.value+='9'" id="boton"></td>
+<td  align="center"><input type="button" value="/" onclick="pantalla.value+='/'" id="boton"></td>
+</tr>
+
+<tr>
+
+
+<td align="center"><input type="button" value="4" onclick="pantalla.value+='4'" id="boton"></td>
+<td align="center"><input type="button" value="5" onclick="pantalla.value+='5'" id="boton"></td>
+<td align="center"><input type="button" value="6" onclick="pantalla.value+='6'" id="boton"></td>
+<td align="center"><input type="button" value="X" onclick="pantalla.value+='*'" id="boton"></td>
+</tr>
+
+
+<tr>
+<td align="center"><input type="button" value="1" onclick="pantalla.value+='1'" id="boton"></td>
+<td align="center"><input type="button" value="2" onclick="pantalla.value+='2'" id="boton"></td>
+<td align="center"><input type="button" value="3" onclick="pantalla.value+='3'" id="boton"></td>
+<td align="center"><input type="button" value="-" onclick="pantalla.value+='-'" id="boton"></td>
+</tr>
+
+<tr>
+<td align="center"><input type="button" value="0" onclick="pantalla.value+='0'" id="boton"></td>
+<td align="center"><input type="button" value="." onclick="pantalla.value='.'" id="boton"></td>
+<td align="center"><input type="button" value="=" onclick="pantalla.value=eval(pantalla.value)" id="boton"></td>
+<td align="center"><input type="button" value="+" onclick="pantalla.value+='+'" id="boton"></td>
+</tr>
+
 </table>
+
 </form>
+
 </body>
 </html>
