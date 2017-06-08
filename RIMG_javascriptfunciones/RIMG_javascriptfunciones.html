@@ -1,0 +1,31 @@
+                        <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>funciones</title>
+
+<script language="JavaScript"> 
+
+function prueba( pregunta ) 
+	
+	{
+	var resul=eval( pregunta );	
+	var salida="Qué es "+pregunta+"?";	
+	var correc='<img src="images/corr.gif">';	
+	var incorrec='<img src="images/incorr.gif">';
+	var resp=prompt( salida, "0" );	
+	return( resp==resul )? correc:incorrec;
+	}
+	</script>
+	
+</head>
+
+<body>
+
+<script language="JavaScript">
+
+		var res=prueba( "10 + 10" );
+		document.write( res );</script>
+</body>
+</html>
+
