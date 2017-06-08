@@ -30,6 +30,47 @@ for(x=0;x<opcion;x++)
 {
 	document.writeln("<p>"+(x)+"</p>");
 }
+
+          //ARREGLOS//
+arreglo=null; 
+arreglo=[1,2,3,4,5];
+for(x=0;x<arreglo.length;x++){
+document.writeln("<p>"+(arreglo[x])+"</p>");
+}
+
+
+
+if(true||false){
+	document.writeln("true");
+}
+else
+{
+	document.writeln("false");
+}
+
+if(true&&false){
+	document.writeln("true");
+}
+else
+{
+	document.writeln("false");
+}
+
+
+function despNombre( nombre ) {
+document.write( "<hr>tu nombre es<b>" );
+document.write( nombre );
+document.write( "</b><hr>" );}
+despNombre(" Juan");
+
+for(x=0;x<10;x++)
+{
+	document.writeln("<p>"+cubo(x)+"</p>");
+}
+function cubo( numero ) {
+	return numero * numero * numero;}
+
+
 </script>
 
 
