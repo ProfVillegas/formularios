@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MOFA_click</title>
+<script type="text/javascript">
+var nombre="Desconocido";
+
+function clickme(){
+	nombre=prompt("Proporcione su nombre:","");
+	document.getElementById("texto").innerHTML="HOLA "+nombre;
+	//alert("Hola"+nombre);
+	}
+	function bienvenido(){
+		document.getElementById("texto").innerHTML="Bienvenido "+nombre;
+	//alert("Bienvenido "+nombre);
+	}
+	function adios(){
+		document.getElementById("texto").innerHTML="Adios "+nombre;
+		//alert("Adios "+nombre);
+	}
+	function cambiar(elemento, valor){
+	if(valor==2){
+		elemento.src="";
+	}
+	else{elemento.src="";
+	}
+	
+	
+	</script>
+</head>
+
+<body>
+<input type="button" name="saludo" value="Saludame" onClick="clickme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+<div id="texto">
+<img src="../../../ETIQUETAS/incorr.gif" onMouseOver="cambiar(this,1)" onMouseOut="cambiar(this,2)">
+</div>
+</body>
+</html>

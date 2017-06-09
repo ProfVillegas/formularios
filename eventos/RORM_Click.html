@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>RORM_Click</title>
+<script type="text/javascript">
+var nombre="Desconoido";
+
+ function clickme(){
+	 nombre=prompt ("proporcione su nombre:","");
+	 document.getElementById("texto").innerHTML="Hola "+nombre;
+	 // alert("Hola"+nombre);
+ }
+ function bienvenido(){
+	 //alert("Bienvenido "+nombre);
+	 document.getElementById("texto").innerHTML="Bienvenido "+nombre;
+ }
+ function adios(){
+	 //alert("Adios "+nombre);
+	 document.getElementById("texto").innerHTML="Adios "+nombre;
+ }
+ 
+</script>
+</head>
+<body>
+<input type="button" name="saludo" value="Saludame" onClick="clickme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+<div id="texto">
+
+</div>
+</body>
+</html>
