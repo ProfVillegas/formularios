@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ejercio de java</title>
+
+ <script language="JavaScript">
+ //<!-- ocultar...
+ 	function prueba( pregunta ) {
+ 	var resul=eval( pregunta );
+	var salida="Qué es "+pregunta+"?";
+	var correc='<img src="imagenes/corr.gif">';
+    var incorrec='<img src="imagenes/incorr.gif">';
+    var resp=prompt( salida, "0" );
+    return( resp==resul )? correc:incorrec;
+}//deja de ocultar -->
+	</script>
+ </head>
+<body>
+<script language="JavaScript">
+//<!– ocultar
+ var res=prueba( "30 + 10" );
+ 	document.write( res );
+//deja de ocultar -->
+ </script>
+</body>
+</html><script language="JavaScript">
+//<!– ocultar
+ var res=prueba( "30 + 10" );
+ 	document.write( res );
+//deja de ocultar -->
+ </script>

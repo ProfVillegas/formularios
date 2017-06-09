@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SUAJ_Ejercicios de Java</title>
+<script language="JavaScript"> function prueba( pregunta ) 	
+	{
+	var resul=eval( pregunta );	
+	var salida="Qué es "+pregunta+"?";	
+	var correc='<img src="imagenes/corr.gif">';	
+	var incorrec='<img src="imagenes/incorr.gif">';
+	var resp=prompt( salida, "0" );	
+	return( resp==resul )? correc:incorrec;
+	}
+	</script>
+</head>
+<body>
+<script language="JavaScript">
+		var res=prueba( "10 + 10" );
+		document.write( res );
+</script>
+</body>
+</html>
