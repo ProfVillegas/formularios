@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CAEH_Click</title>
+<script type="text/javascript">
+	var nombre="Desconocido";
+	function clickme(){
+		nombre=prompt("Proporcione su nombre:","");
+		document.getElementById("texto").innerHTML="Hola "+nombre;
+		//alert("hola "+nombre);
+	}
+	function bienvenido(){
+		document.getElementById("texto").innerHTML="Bienvenido "+nombre;
+		//alert("Bienvenido "+nombre);
+	}
+	function adios(){
+		document.getElementById("texto").innerHTML="Adios "+nombre;
+		//alert("Adios "+nombre);
+	}
+	function cambiar(elemento,valor){
+		if(valor==2){
+			elemento.src="img/corr.gif";
+		}else{
+			elemento.src="img/incorr.gif";
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<input type="button" name="saludo" value="saludame" onclick="clickme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+	<div id="texto">
+		
+	</div>
+	<img src="corr.gif" onMouseOver="cambiar(this,1)" onMouseOut="cambiar(this,2)">
+</body>
+</html>
