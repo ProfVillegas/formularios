@@ -10,7 +10,11 @@
 function prueba( pregunta ) {
 	var resul=eval( pregunta );
 	var salida="Qué es "+pregunta+"?";
+<<<<<<< HEAD
 	var correc='<img src=" ">';
+=======
+	var correc='<img src="corr.gif">';
+>>>>>>> b58f3869c9469b73873823996eb644b30bac7e08
 	var incorrec='<img src="incorr.gif">';
 	var resp=prompt( salida, "0" );	
 	return( resp==resul )? correc:incorrec;
