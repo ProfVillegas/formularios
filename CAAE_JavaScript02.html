@@ -21,8 +21,43 @@
 	}
 	
 	for(x=0;x<opcion;x++){
-		document.writeln("<p>"+(x+1)+"</p>");
+		document.writeln("<p>"+(x)+"</p>");
 	}
+	
+	arreglo=null;
+	arreglo=[1,2,3,4,5];
+	for(x=0;x<arreglo.length;x++){
+		document.writeln("<p>"+(arreglo[x])+"</p>");
+	}
+	if(true||false){
+		document.writeln("true");
+	}
+	else{
+		document.writeln("false");
+	}
+	
+	if(true && false){
+		document.writeln("true");
+	}
+	else{
+		document.writeln("false");
+	}
+	
+	function despNombre( nombre ) {
+		document.write( "<hr>tu nombre es <b>" );
+		document.write( nombre );
+		document.write( "</b><hr>" );
+	}
+	despNombre("Erick");
+	
+	function cubo( numero ) {
+		return numero * numero * numero;
+	}
+	for(x=0;x<10;x++){
+		document.writeln("<p>"+cubo(x)+"</p>");
+	}
+
+	
 	</script>
 </body>
 </html>
