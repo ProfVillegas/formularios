@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>click</title>
+<script type="text/javascript">
+var nombre="desconocido ";
+function clickme(){
+	nombre=prompt("proporcione su nombre:","");
+	document.getElementById("texto").innerHTML="hola "+nombre;
+	//alert("hola "+nombre);
+}
+function bienvenido(){
+	document.getElementById("texto").innerHTML="bienvenino "+nombre;}
+	//alert("Bienvenido "+nombre);}
+function adios(){
+	document.getElementById("texto").innerHTML="Adios "+nombre;
+	}
+		//alert("adios "+nombre);}
+		function cambiar(elemento, valor){
+			if(valor==2){
+				elemento.src="images/corr.gif";}
+				else{elemento.src="images/incorr.gif";}
+		
+		}
+		
+		
+</script>
+</head>
+
+<body>
+
+<input type="button" name="saludo" value="saludame" onClick="clickme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+<div id="texto">
+
+</div>
+<img src="images/corr.gif" onMouseOver="cambiar(this,1)" onMouseOut="cambiar(this,2)">
+</body>
+</html>
