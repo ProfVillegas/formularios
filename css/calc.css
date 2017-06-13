@@ -8,3 +8,13 @@
 	padding:10px;
 	border-radius:10px;
 }
+input{
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	pointer-events: none;
+
+}

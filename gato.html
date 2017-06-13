@@ -4,12 +4,25 @@
 <meta charset="utf-8">
 <title>Calculadora</title>
 <link rel="stylesheet" href="css/calc.css" media="screen" />
+<script type="text/javascript">
+	var num=0;
+	num=prompt("Proporcione un tamaño de arreglo",0);
 
+</script>
 </head>
 
 <body>
-<div id="calculadora">
 
+<div id="calculadora">
+	<script type="text/javascript">
+		for(x=0; x<num; x++){
+			document.writeln("<div class=\"row\">");
+			for(y=0; y<num;y++){
+				document.writeln("<input type='text' >");
+			}
+			document.writeln("</div>");
+		}
+	</script>
 
 </div>
 
