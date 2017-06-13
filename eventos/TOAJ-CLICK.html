@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TOAJ_click</title>
+<script type="text/javascript">
+ var nombre=" desconocido ";
+
+ function clikme(){
+	 nombre=prompt("proporcione su nombre: "," ");
+	 document.getElementById("texto").innerHTML="hola "+nombre;
+	 
+	 }
+	 
+	 function bienvenido(){
+		 document.getElementById("texto").innerHTML="bienvenido "+nombre;
+		 }
+		 
+		 function adios(){
+		 document.getElementById("texto").innerHTML="adios "+nombre;
+		 }
+		 function canbiar(elemento, valor){
+			 if(valor==2){
+			 elemento.src="IMAGENES/corr.gif";
+			 }else
+			 elemento.src="IMAGENES/incorr.gif";
+			 }
+	 
+</script>
+</head>
+
+<body>
+<input type="button" name="saludo" value="saludame" onClick="clikme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+<div id="texto">
+
+</div>
+<img src="imagenes/corr.gif" onMouseOver="canbiar(this,1)" onMouseOut="canbiar(this,2)">
+</body>
+</html>

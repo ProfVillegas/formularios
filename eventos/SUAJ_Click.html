@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SUAJ_Click</title>
+<script type="text/javascript">
+var nombre="Desconocido";
+	function clickme(){
+		nombre=prompt("Proporcione su nombre:","");
+		document.getElementById("texto").innerHTML="Hola "+nombre;
+		//alert("Hola"+nombre);
+	}
+	function bienvenido(){
+		document.getElementById("texto").innerHTML="Bienvenido "+nombre;
+		//alert("Bienvenido "+nombre);
+	}
+	function adios(){
+		document.getElementById("texto").innerHTML="Adios "+nombre;
+		//alert("Adios "+nombre);
+	}
+	function cambiar(elemento, valor){
+		if (valor==2){
+			elemento.src="imagenes/corr.gif";
+		}else{
+			elemento.src="imagenes/incorr.gif";
+		}
+	}
+</script>
+</head>
+
+
+<body>
+<input type="button" name="saludo" value="Saludame"
+onClick="clickme()" onMouseOver="bienvenido()" onMouseOut="adios()">
+<div id="texto">
+</div>
+<img src="imagenes/corr.gif" alt="" onMouseOver="cambiar(this,1)" onMouseOut="cambiar(this,2)">
+</body>
+</html>
