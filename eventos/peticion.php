@@ -1,16 +1,10 @@
 <?php
 <<<<<<< HEAD
-<<<<<<< HEAD
-	echo '<p id="nombre">'.$_GET['nombre']."</p>";
-	echo '<p id="edad">'.$_GET['edad']."</p>";
+echo $_GET["nom"];
+echo $_GET["edad"];
 =======
 echo '<p id="nombre">'.$_GET['nombre']."</p>";
 echo '<p id="edad">'.$_GET['edad']."</p>";
+>>>>>>> 97cc55f9af456c47da789c16a25d2097e3c71f2c
 
->>>>>>> 0534e15984973aa1eb634ab52781881daf4f15a2
-=======
-echo '<p id="nombre">'.$_GET['nombre']."</p>";
-echo '<p id="edad">'.$_GET['edad']."</p>";
-
->>>>>>> 0534e15984973aa1eb634ab52781881daf4f15a2
 ?>
