@@ -1,0 +1,139 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> e31a3da53b927d2b8421b5d910e7084dae1cc199
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript">	</script>
+	<script type="text/javascript">
+		nom="Jose";
+		edad=33;
+		$(document).ready(function(){
+			$("#enviar").click(function(e){
+				e.preventDefault();
+				alert("se presiono enviar");
+				nom=$("#nom").val();
+				nom=$("#edad").val();
+		$.ajax({
+                data:"nombre="+nom+"&edad="+edad,
+                url: 'peticion.php',
+                beforeSend: function () {
+                        $("#resultado").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#resultado").html(response);
+                }
+        });
+		});
+			});
+			
+	</script>
+</head>
+
+<body>
+<form name="frm" id="frm" action="#">
+	<label for="nom">Nombre:</label>
+	<input type="text" id="nom" name="nom">
+	<label for="edad">Edad:</label>
+	<input type="number" max="50" min="12" id="edad" name="edad">
+	<button name="enviar" id="enviar"></button>
+	</form>
+<div id="resultado"></div>
+
+</body>
+<<<<<<< HEAD
+=======
+=======
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript">	</script>
+	<script type="text/javascript">
+		nom="Jose";
+		edad=33;
+		$(document).ready(function(){
+			$("#enviar").click(function(e){
+				e.preventDefault();
+				alert("se presiono enviar");
+				nom=$("#nom").val();
+				nom=$("#edad").val();
+		$.ajax({
+                data:"nombre="+nom+"&edad="+edad,
+                url: 'peticion.php',
+                beforeSend: function () {
+                        $("#resultado").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#resultado").html(response);
+                }
+        });
+		});
+			});
+			
+	</script>
+</head>
+
+<body>
+<form name="frm" id="frm" action="#">
+	<label for="nom">Nombre:</label>
+	<input type="text" id="nom" name="nom">
+	<label for="edad">Edad:</label>
+	<input type="number" max="50" min="12" id="edad" name="edad">
+	<button name="enviar" id="enviar"></button>
+	</form>
+<div id="resultado"></div>
+
+</body>
+>>>>>>> 0534e15984973aa1eb634ab52781881daf4f15a2
+=======
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<title>Documento sin título</title>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript">	</script>
+	<script type="text/javascript">
+		nom="Jose";
+		edad=33;
+		$(document).ready(function(){
+			$("#enviar").click(function(e){
+				e.preventDefault();
+				alert("se presiono enviar");
+				nom=$("#nom").val();
+				nom=$("#edad").val();
+		$.ajax({
+                data:"nombre="+nom+"&edad="+edad,
+                url: 'peticion.php',
+                beforeSend: function () {
+                        $("#resultado").html("Procesando, espere por favor...");
+                },
+                success:  function (response) {
+                        $("#resultado").html(response);
+                }
+        });
+		});
+			});
+			
+	</script>
+</head>
+
+<body>
+<form name="frm" id="frm" action="#">
+	<label for="nom">Nombre:</label>
+	<input type="text" id="nom" name="nom">
+	<label for="edad">Edad:</label>
+	<input type="number" max="50" min="12" id="edad" name="edad">
+	<button name="enviar" id="enviar"></button>
+	</form>
+<div id="resultado"></div>
+
+</body>
+>>>>>>> a7d9e4a613fbdd18a42a5ad0908a0b84570f95c0
+>>>>>>> e31a3da53b927d2b8421b5d910e7084dae1cc199
+</html>
